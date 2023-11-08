@@ -4,52 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JHomes</title>
-    <link rel="stylesheet" href="style.css">
+    <title>JHomes Blog</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <nav>
+    <header>
         <div class="row">
-            <div class="nav__container">
-                <div class="header__logo">
-                    <figure class="logo__wrapper">
-                        <img src="./assets/group-11.svg" alt="header logo">
-                    </figure>
+            <div class="header__container">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="63" height="70" viewBox="0 0 63 70" fill="none">
+                        <mask id="mask0_698_927" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                            width="63" height="60">
+                            <path d="M0 0H62.7428V59.4202H0V0Z" fill="white" />
+                        </mask>
+                        <g mask="url(#mask0_698_927)">
+                            <path
+                                d="M61.6915 18.2666L32.5427 0.351224C31.8272 -0.0879404 30.9197 -0.0879404 30.2048 0.351224L1.05835 18.2666C0.398715 18.6743 -0.00598145 19.3939 -0.00598145 20.1701V57.146C-0.00598145 58.3785 0.994171 59.3787 2.22668 59.3787C3.45979 59.3787 4.45994 58.3785 4.45994 57.146V21.4198L31.3737 4.87657L58.2905 21.4198V57.146C58.2905 58.3785 59.2907 59.3787 60.5238 59.3787C61.7563 59.3787 62.7564 58.3785 62.7564 57.146V20.1701C62.7564 19.3939 62.3517 18.6743 61.6915 18.2666Z"
+                                fill="#FFA800" />
+                        </g>
+                        <path
+                            d="M35.2567 66.3488V27.5835C35.2567 26.0869 34.0434 24.8737 32.5468 24.8737C31.0502 24.8737 29.8369 26.0869 29.8369 27.5835V60.787C29.8369 62.7467 28.2898 64.3569 26.3317 64.4352L18.427 64.7514H10.4971C9.04774 64.7514 7.8728 65.9263 7.8728 67.3757C7.8728 68.825 9.04774 70 10.4971 70H31.6055C33.622 70 35.2567 68.3653 35.2567 66.3488Z"
+                            fill="black" />
+                    </svg>
                     <span class="logo__text">JHomes</span>
                 </div>
-                <ul class="nav__links">
-                    <li class="nav__link">Home</li>
-                    <li class="nav__link">About</li>
-                    <div class="special__nav-link">
-                    <li class="nav__link">Blog</li>
-            <img class="link-item" alt="" src="./assets/vector-2.svg" />
-          </div>
-                    <li class="nav__link">Login</li>
-                    <li class="nav__link">Sign Up</li>
-                </ul>
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <div class="special__nav">
+                            <li><a href="#">Blog</a></li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="2" viewBox="0 0 37 2"
+                                fill="none">
+                                <path d="M0 1H37" stroke="#FFA800" />
+                            </svg>
+                        </div>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
             </div>
         </div>
-    </nav>
-
-    <header class="hero"></header>
+        </nav>
+    </header>
 
     <main>
-        <section>
-            <div class="f-section__wrapper">
-                  <h3>Featured Articles</h3>
-                  <div class="buttons">
-                    <button class="button__wrapper">All</button>
-                    <button class="button__container">Recent</button>
-                    <button class="button__container">Previous</button>
-                  </div>
-                </div>
+        <section id="hero"></section>
 
-        
+        <section id="featured">
+            <div class="row">
+                <div class="f-articles">
+                    <h2>Featured Articles</h2>
+                    <div class="f-articles__container">
+                        <button class="yellow__button">ALL</button>
+                        <button>RECENT</button>
+                        <button>PREVIOUS</button>
+                    </div>
+                </div>
+                <div class="cards__container">
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="./assets/card-image-1.png" alt="">
+                        </div>
+                        <span>27.10.23</span>
+                        <h3>Five Home Decor Trends to Look Out for in 2024</h3>
+                        <p>Sustainability is more important than ever before, and this trend is reflected in home decor.
+                            People are looking for ways to decorate their homes in a way.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="./assets/card-image-1.png" alt="">
+                        </div>
+                        <span>27.10.23</span>
+                        <h3>Five Home Decor Trends to Look Out for in 2024</h3>
+                        <p>Sustainability is more important than ever before, and this trend is reflected in home decor.
+                            People are looking for ways to decorate their homes in a way.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="./assets/card-image-1.png" alt="">
+                        </div>
+                        <span>27.10.23</span>
+                        <h3>Five Home Decor Trends to Look Out for in 2024</h3>
+                        <p>Sustainability is more important than ever before, and this trend is reflected in home decor.
+                            People are looking for ways to decorate their homes in a way.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="./assets/card-image-1.png" alt="">
+                        </div>
+                        <span>27.10.23</span>
+                        <h3>Five Home Decor Trends to Look Out for in 2024</h3>
+                        <p>Sustainability is more important than ever before, and this trend is reflected in home decor.
+                            People are looking for ways to decorate their homes in a way.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="./assets/card-image-1.png" alt="">
+                        </div>
+                        <span>27.10.23</span>
+                        <h3>Five Home Decor Trends to Look Out for in 2024</h3>
+                        <p>Sustainability is more important than ever before, and this trend is reflected in home decor.
+                            People are looking for ways to decorate their homes in a way.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="./assets/card-image-1.png" alt="">
+                        </div>
+                        <span>27.10.23</span>
+                        <h3>Five Home Decor Trends to Look Out for in 2024</h3>
+                        <p>Sustainability is more important than ever before, and this trend is reflected in home decor.
+                            People are looking for ways to decorate their homes in a way.</p>
+                    </div>
+            </div>
+            </div>
+
+        </section>
+
+        <section id="overlay">
+
+        </section>
+
+        <section id="short-reads">
+            <div class="short-reads__title">
+                <svg class="eye" xmlns="http://www.w3.org/2000/svg" width="69" height="64" viewBox="0 0 69 64"
+                    fill="none">
+                    <path
+                        d="M36.5744 32.7111C36.5744 41.205 34.5509 48.8459 31.3314 54.3294C28.0982 59.8363 23.7767 63 19.204 63C14.6312 63 10.3097 59.8363 7.07653 54.3294C3.85707 48.8459 1.83362 41.205 1.83362 32.7111C1.83362 24.2173 3.85707 16.5763 7.07653 11.0928C10.3097 5.58594 14.6312 2.42224 19.204 2.42224C23.7767 2.42224 28.0982 5.58594 31.3314 11.0928C34.5509 16.5763 36.5744 24.2173 36.5744 32.7111Z"
+                        fill="white" stroke="black" stroke-width="2" />
+                    <path
+                        d="M67.8629 31.2889C67.8629 39.7827 65.8395 47.4237 62.62 52.9072C59.3868 58.4141 55.0653 61.5778 50.4926 61.5778C45.9198 61.5778 41.5983 58.4141 38.3651 52.9072C35.1456 47.4237 33.1222 39.7827 33.1222 31.2889C33.1222 22.795 35.1456 15.1541 38.3651 9.67061C41.5983 4.1637 45.9198 1 50.4926 1C55.0653 1 59.3868 4.1637 62.62 9.67061C65.8395 15.1541 67.8629 22.795 67.8629 31.2889Z"
+                        fill="white" stroke="black" stroke-width="2" />
+                    <ellipse cx="22.0484" cy="44.9422" rx="7.11111" ry="12.0889" fill="black" />
+                    <ellipse cx="53.3369" cy="44.9422" rx="7.11111" ry="12.0889" fill="black" />
+                </svg>
+                <img class="line-5" src="./assets/line-5.png" alt="">
+                <h2>Short Reads</h2>
+            </div>
+            <div class="row">
+            <div class="short-reads__container">
+        <img src="./assets/card-short.png" alt="">
+        <img src="./assets/card-short.png" alt="">
+        <img src="./assets/card-short.png" alt="">
+    </div>
+</div>
+        </section>
     </main>
 
-
-
+    
     <footer>
         <div class="row">
             <div class="footer__container">
@@ -62,19 +164,19 @@
         <div class="footer__right">
             <p>Copyright @Joygirl. Powered by JHomes</p>
             <div class="footer__socials">
-                <figure class="social-media__icon">
+                <figure>
                     <img src="./assets/Facebook.png" alt="">
                 </figure>
-                <figure class="social-media__icon">
+                <figure>
                     <img src="./assets/linkedin.svg" alt="">
                 </figure>
-                <figure class="social-media__icon">
+                <figure>
                     <img src="./assets/instagram.svg" alt="">
                 </figure>
-                <figure class="social-media__icon">
+                <figure>
                     <img src="./assets/telegram.svg" alt="">
                 </figure>
-                <figure class="social-media__icon">
+                <figure>
                     <img src="./assets/whatsapp.svg" alt="">
                 </figure>
             </div>
