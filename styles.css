@@ -146,7 +146,8 @@ margin: auto;
 
 .short-reads__container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 500px;
+    grid-template-columns: 100px 100px 100px;
     grid-column-gap: 1.5rem;
 }
 
